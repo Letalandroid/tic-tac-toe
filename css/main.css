@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00fa;
+}
+
+.container {
+    background-color: #fff;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    outline: 1px solid #000;
+}
+
+.table > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    background-color: #0f0d;
+}
+
+.block {
+    width: 100%;
+    height: 98px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #f00;
+    border-radius: 50%;
+}
+
+.circle::before {
+    display: block;
+    content: "";
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #2f2;
+}
+
+.asp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5px;
+    height: 90px;
+    background-color: #f00;
+    border-radius: 300px;
+    transform: rotate(-45deg);
+}
+
+.asp::before {
+    display: block;
+    content: "";
+    width: 5px;
+    height: 90px;
+    background-color: #f00;
+    border-radius: 300px;
+    transform: rotate(90deg);
+}
+
+#alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #000a;
+}
+
+.bloque {
+    display: flex;
+    flex-direction: column;
+    background-color: #fffc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.bloque > span {
+    margin-bottom: 20px;
+}
+
+#play, #bot {
+    display: none;
+}
